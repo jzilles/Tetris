@@ -6,8 +6,10 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Threading.Tasks;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace Tetris
 {
@@ -40,11 +42,24 @@ namespace Tetris
         };
         private readonly Image[,] imageControls;
         private readonly int maxDelay = 1000;
+        private readonly int minDelay = 75;
+        private readonly int delayDecrease = 25;
         private GameState gameState = new GameState();
+
+        private MediaPlayer gameMusicPlayer = new MediaPlayer();
+        private MediaPlayer gameOverMusicPlayer = new MediaPlayer();
         public MainWindow()
         {
             InitializeComponent();
             imageControls = SetupGameCanvas(gameState.GameGrid);
+
+            gameMusicPlayer.Open(new Uri("Assets/Tetris.mp3", UriKind.Relative));
+            gameOverMusicPlayer.Open(new Uri("Assets/GameOver.mp3", UriKind.Relative));
+            gameMusicPlayer.MediaEnded += (s, e) =>
+            {
+                gameMusicPlayer.Position = TimeSpan.Zero;
+                gameMusicPlayer.Play();
+            };
         }
         private Image[,] SetupGameCanvas(GameGrid grid)
         {
@@ -123,13 +138,17 @@ namespace Tetris
         }
         private async Task GameLoop()
         {
+            gameMusicPlayer.Play();
             Draw(gameState);
             while (!gameState.GameOver)
             {
-                await Task.Delay(500);
+                int delay = Math.Max(minDelay, maxDelay - (gameState.Score * delayDecrease));
+                await Task.Delay(delay);
                 gameState.MoveBlockDown();
                 Draw(gameState);
             }
+            gameMusicPlayer.Stop();
+            gameOverMusicPlayer.Play();
             GameOverMenu.Visibility = Visibility.Visible;
             FinalScoreText.Text = $"Score: {gameState.Score}";
         }
@@ -175,7 +194,9 @@ namespace Tetris
         {
             gameState = new GameState();
             GameOverMenu.Visibility = Visibility.Hidden;
+            gameOverMusicPlayer.Stop();
             await GameLoop();
         }
+        
     }
 }

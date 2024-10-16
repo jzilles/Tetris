@@ -18,3 +18,5 @@ C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\refint\Tetris.dll
 C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris.pdb
 C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris.genruntimeconfig.cache
 C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\ref\Tetris.dll
+C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris_Content.g.cs
+C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris.sourcelink.json

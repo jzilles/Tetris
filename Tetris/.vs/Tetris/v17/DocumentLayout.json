@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\blockqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:blockqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\tblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:tblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\tblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:tblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\blockqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|solutionrelative:blockqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6AB6D08-9DBD-4EE4-84BB-0F6E1729DD32}|Tetris.csproj|c:\\codingdojo\\project\\tetris\\oblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,21 +69,27 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\CodingDojo\\Project\\Tetris\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\CodingDojo\\Project\\Tetris\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T16:14:05.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "GameGrid.cs",
               "DocumentMoniker": "C:\\CodingDojo\\Project\\Tetris\\GameGrid.cs",
               "RelativeDocumentMoniker": "GameGrid.cs",
               "ToolTip": "C:\\CodingDojo\\Project\\Tetris\\GameGrid.cs",
               "RelativeToolTip": "GameGrid.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:47:09.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:47:09.826Z"
             },
             {
               "$type": "Document",
@@ -93,39 +99,26 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\CodingDojo\\Project\\Tetris\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwEIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T15:04:52.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\CodingDojo\\Project\\Tetris\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\CodingDojo\\Project\\Tetris\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-15T15:04:48.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\CodingDojo\\Project\\Tetris\\GameState.cs",
               "RelativeDocumentMoniker": "GameState.cs",
               "ToolTip": "C:\\CodingDojo\\Project\\Tetris\\GameState.cs",
               "RelativeToolTip": "GameState.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAQwJsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAiwJsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:42:04.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T20:42:04.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BlockQueue.cs",
               "DocumentMoniker": "C:\\CodingDojo\\Project\\Tetris\\BlockQueue.cs",
               "RelativeDocumentMoniker": "BlockQueue.cs",
@@ -133,21 +126,19 @@
               "RelativeToolTip": "BlockQueue.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAkwBUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T20:32:48.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T20:32:48.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TBlock.cs",
               "DocumentMoniker": "C:\\CodingDojo\\Project\\Tetris\\TBlock.cs",
               "RelativeDocumentMoniker": "TBlock.cs",
               "ToolTip": "C:\\CodingDojo\\Project\\Tetris\\TBlock.cs",
               "RelativeToolTip": "TBlock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T19:59:02.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T19:59:02.717Z"
             },
             {
               "$type": "Document",
@@ -159,8 +150,7 @@
               "RelativeToolTip": "JBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T19:58:36.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T19:58:36.876Z"
             },
             {
               "$type": "Document",
@@ -172,8 +162,7 @@
               "RelativeToolTip": "LBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T19:58:25.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T19:58:25.416Z"
             },
             {
               "$type": "Document",
@@ -185,8 +174,7 @@
               "RelativeToolTip": "ZBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T19:58:16.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T19:58:16.519Z"
             },
             {
               "$type": "Document",
@@ -198,8 +186,7 @@
               "RelativeToolTip": "SBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T19:58:06.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T19:58:06.603Z"
             },
             {
               "$type": "Document",
@@ -211,8 +198,7 @@
               "RelativeToolTip": "IBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:30:53.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T17:30:53.592Z"
             },
             {
               "$type": "Document",
@@ -224,8 +210,7 @@
               "RelativeToolTip": "OBlock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:41:11.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T17:41:11.939Z"
             },
             {
               "$type": "Document",
@@ -237,8 +222,7 @@
               "RelativeToolTip": "Block.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:18:52.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T17:18:52.383Z"
             },
             {
               "$type": "Document",
@@ -250,8 +234,7 @@
               "RelativeToolTip": "Position.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:16:27.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T17:16:27.319Z"
             }
           ]
         }
