@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Threading.Tasks;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Media;
+
 
 
 namespace Tetris
@@ -18,6 +20,8 @@ namespace Tetris
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly SoundPlayer soundPlayer;
+        private readonly SoundPlayer soundPlayer2;
         private readonly ImageSource[] tileImages = new ImageSource[]
         {
             new BitmapImage(new Uri("Assets/TileEmpty.png",UriKind.Relative)),
@@ -46,20 +50,12 @@ namespace Tetris
         private readonly int delayDecrease = 25;
         private GameState gameState = new GameState();
 
-        private MediaPlayer gameMusicPlayer = new MediaPlayer();
-        private MediaPlayer gameOverMusicPlayer = new MediaPlayer();
         public MainWindow()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer("Assets/Tetris.wav");
+            soundPlayer2 = new SoundPlayer("Assets/GameOver.wav");
             imageControls = SetupGameCanvas(gameState.GameGrid);
-
-            gameMusicPlayer.Open(new Uri("Assets/Tetris.mp3", UriKind.Relative));
-            gameOverMusicPlayer.Open(new Uri("Assets/GameOver.mp3", UriKind.Relative));
-            gameMusicPlayer.MediaEnded += (s, e) =>
-            {
-                gameMusicPlayer.Position = TimeSpan.Zero;
-                gameMusicPlayer.Play();
-            };
         }
         private Image[,] SetupGameCanvas(GameGrid grid)
         {
@@ -82,6 +78,7 @@ namespace Tetris
             }
             return imageControls;
         }
+        
         private void DrawGrid(GameGrid grid)
         {
             for (int r = 0; r < grid.Rows; r++)
@@ -138,7 +135,6 @@ namespace Tetris
         }
         private async Task GameLoop()
         {
-            gameMusicPlayer.Play();
             Draw(gameState);
             while (!gameState.GameOver)
             {
@@ -147,10 +143,17 @@ namespace Tetris
                 gameState.MoveBlockDown();
                 Draw(gameState);
             }
-            gameMusicPlayer.Stop();
-            gameOverMusicPlayer.Play();
+            PlayGameOverSound();
             GameOverMenu.Visibility = Visibility.Visible;
-            FinalScoreText.Text = $"Score: {gameState.Score}";
+            if (gameState.Score < 10)
+            {
+                FinalScoreText.Text = $"Try Again! Your Score: {gameState.Score}";
+            }
+            else
+            {
+                FinalScoreText.Text = $" Good Job! Your Score: {gameState.Score}";
+            }
+
         }
         private void Window_KeyDown(object sender,KeyEventArgs e)
         {
@@ -188,13 +191,36 @@ namespace Tetris
         }
         private async void GameCanvas_Loaded(object sender,RoutedEventArgs e)
         {
+            PlayGameStartSound();
             await GameLoop();
+        }
+        private void PlayGameStartSound()
+        {
+            try
+            {
+                soundPlayer.PlayLooping();
+            }
+            catch
+            {
+                MessageBox.Show("Error playing sound");
+            }
+        }
+        private void PlayGameOverSound()
+        {
+            try
+            {
+                soundPlayer2.Play();
+            }
+            catch
+            {
+                MessageBox.Show("Error playing GameOver sound");
+            }
         }
         private async void PlayAgain_Click(object sender,RoutedEventArgs e)
         {
             gameState = new GameState();
             GameOverMenu.Visibility = Visibility.Hidden;
-            gameOverMusicPlayer.Stop();
+            PlayGameStartSound();
             await GameLoop();
         }
         

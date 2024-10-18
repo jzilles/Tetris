@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/gameover.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/gameover.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/icon.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/tetris.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/tetris.wav")]
 
 

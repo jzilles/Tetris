@@ -20,6 +20,7 @@
     <None Remove="Assets\Block-T.png" />
     <None Remove="Assets\Block-Z.png" />
     <None Remove="Assets\GameOver.mp3" />
+    <None Remove="Assets\GameOver.wav" />
     <None Remove="Assets\Icon.ico" />
     <None Remove="Assets\Tetris.mp3" />
     <None Remove="Assets\TileBlue.png" />
@@ -33,9 +34,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\GameOver.mp3" />
+    <Content Include="Assets\GameOver.wav" />
     <Content Include="Assets\Icon.ico" />
-    <Content Include="Assets\Tetris.mp3" />
+    <Content Include="Assets\Tetris.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

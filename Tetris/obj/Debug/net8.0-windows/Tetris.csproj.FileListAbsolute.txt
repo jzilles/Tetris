@@ -20,3 +20,4 @@ C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris.genruntimeconfig.ca
 C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\ref\Tetris.dll
 C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris_Content.g.cs
 C:\CodingDojo\Project\Tetris\obj\Debug\net8.0-windows\Tetris.sourcelink.json
+C:\CodingDojo\Project\Tetris\bin\Debug\net8.0-windows\Assets\Tetris.wav
